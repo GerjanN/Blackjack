@@ -5,7 +5,7 @@ require_once 'Deck.php';
 require_once 'Card.php';
 require_once 'Blackjack.php';
 
-echo 'Wat is je naam? ' . PHP_EOL;
+echo 'Welkom bij blackjack! Wat is je naam? ' . PHP_EOL;
 $name = readline();
 $player = new Player($name);
 $blackjack = new Blackjack($player);
