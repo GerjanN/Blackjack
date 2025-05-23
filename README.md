@@ -1,8 +1,7 @@
 # Blackjack
 
-Dit is een opdracht van school waarbij je in de terminal blackjack tegen
-jezelf kan spelen.
-Dit is een opdracht waarbij je OOP (Object Oriented Programming) leert.
+Dit is een opdracht van school waarbij je in de terminal blackjack kan spelen tegen een dealer en andere personen.
+in deze opdracht leer je OOP (Object Oriented Programming).
 
 ### Technieken
 

@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 class Deck
 {
@@ -28,7 +28,7 @@ class Deck
                 $this->cards[] = new Card($suit, $value);
             }
         }
-
+ 
         shuffle($this->cards);
     }
 

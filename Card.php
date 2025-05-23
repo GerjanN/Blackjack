@@ -23,16 +23,16 @@ class Card
         $value = $this->value;
         switch ($suit) {
             case 'Harten':
-                $this->suit = '♥';
+                $suit = '♥';
                 break;
             case 'Ruiten':
-                $this->suit = '♦';
+                $suit = '♦';
                 break;
             case 'Klaver':
-                $this->suit = '♣';
+                $suit = '♣';
                 break;
             case 'Schoppen':
-                $this->suit = '♠';
+                $suit = '♠';
                 break;
             default:
                 break;
@@ -40,21 +40,21 @@ class Card
 
         switch ($value) {
             case 'Koning':
-                $this->value = 'K';
+                $value = 'K';
                 break;
             case 'Vrouw':
-                $this->value = 'Q';
+                $value = 'Q';
                 break;
             case 'Boer':
-                $this->value = 'B';
+                $value = 'B';
                 break;
             case 'Aas':
-                $this->value = 'A';
+                $value = 'A';
                 break;
             default:
                 break;
         }
-        return $this->suit . $this->value;
+        return $suit . $value;
     }
 
     private function validateSuit($suit): bool
@@ -81,16 +81,12 @@ class Card
         $value = $this->value;
 
         switch ($value) {
-            case 'K':
+            case 'Koning':
+            case 'Vrouw':
+            case 'Boer':
                 $value = 10;
                 break;
-            case 'Q':
-                $value = 10;
-                break;
-            case 'B':
-                $value = 10;
-                break;
-            case 'A':
+            case 'Aas':
                 $value = 11;
                 break;
             default:
